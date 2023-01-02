@@ -1,0 +1,28 @@
+.header {
+  border-bottom: 5px solid black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.github_link {
+  margin-left: auto;
+  margin-right: auto;
+  height: 55px;
+}
+
+.github_link img:last-child {
+  display: none;  
+}
+.github_link:hover img:last-child {
+  display: block;  
+}
+.github_link:hover img:first-child {
+  display: none;  
+}

@@ -1,0 +1,110 @@
+.button_request {
+  font-size: 32px;
+  background-color: transparent;
+  color: #808080;
+  border:none;
+  height: 70px; 
+  min-width: 120px;
+  cursor: pointer;
+
+  @media (min-width: $tablet_width) {
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop_width) {
+    font-size: 50px;
+  }
+}
+
+.button_request:hover {
+  color: black;
+}
+
+.button_request:active {
+  color: black;
+  border:none;
+}
+
+.active {
+  color: black;
+}
+
+@media (max-width: $tablet_width) {
+  .fiat,
+  .asset,
+  .trade_type {
+    border: 3px solid black;
+    border-radius: .5rem;
+    line-height: 1.8;
+  }
+
+  .fiat:active,
+  .asset:active,
+  .trade_type:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+}
+
+.button_show {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 3px solid black;
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 3;
+  min-height: 3rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 200px;
+
+  @media (min-width: $tablet_width) {
+    font-size: 25px;
+    width: 250px;
+  }
+
+  @media (min-width: $desktop_width) {
+    font-size: 30px;
+    width: 300px;
+  }
+}
+
+.button_show:hover {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button_show:hover {
+  transform: translateY(-1px);
+}
+
+.button_show:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.buttons_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

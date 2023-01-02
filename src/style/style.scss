@@ -1,0 +1,40 @@
+html {
+  height:100%;
+  box-sizing: border-box;
+  font-family: 'Fira Sans';
+}
+
+.body {
+  height:100%;
+  background-color: #fff;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  height: 100%
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+	width: 100vw;
+	margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.white_space {
+  width: 100vw;
+  height: 25px;
+  background-color: #ffffff;
+}

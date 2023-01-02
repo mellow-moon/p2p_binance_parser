@@ -1,0 +1,46 @@
+.request_settings {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 420px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media (min-width: $tablet_width) {
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: 1000px;
+    height: 300px;
+  }
+}
+
+.horizontal_line {
+  height: 5px;
+
+  @media (max-width: $tablet_width) {
+    display: none;
+  }
+}
+
+.parameters {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (max-width: $tablet_width) {
+    flex-direction: row;
+    border: 5px solid black;
+    border-radius: 15px;
+    height: 110px;
+  }
+}
